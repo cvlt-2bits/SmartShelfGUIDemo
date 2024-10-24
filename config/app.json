@@ -1,0 +1,91 @@
+{
+    "serial": {
+        "port": "COM83",
+        "baudrate": 115200,
+        "data_bits": 8,
+        "parity": "None",
+        "stop_bits": 1,
+        "flow_control": "RTS/CTS",
+        "forward": "None"
+    },
+    "shelf": {
+        "ids": [
+            "0000",
+            "0001",
+            "0002",
+            "0003",
+            "0004",
+            "0005",
+            "0006",
+            "0007",
+            "0100",
+            "0101",
+            "0102"
+        ],
+        "mac_addresses": [
+            "D1:4B:6F:CF:17:2D",
+            "C2:95:BC:09:EF:3A",
+            "E3:EC:27:44:FA:8A",
+            "F6:11:B6:F9:28:39",
+            "F5:0A:3D:66:CA:5F",
+            "D0:92:A0:83:D1:F3",
+            "EA:43:4F:A5:34:4F",
+            "EA:DA:A3:AC:78:64",
+            "D0:1C:73:B7:30:77",
+            "D8:A5:C7:97:EA:E9",
+            "D8:82:88:1E:2F:F5"
+        ],
+        "item_length": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            65,
+            41,
+            51,
+            45
+        ],
+        "rail_empty_distance": [
+            312,
+            312,
+            312,
+            312,
+            312,
+            312,
+            312,
+            312,
+            312,
+            312,
+            312
+        ],
+        "rail_full_distance": [
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            30,
+            20,
+            5,
+            40
+        ],
+        "image_path": [
+            "content/packet.jpg",
+            "content/packet.jpg",
+            "content/packet.jpg",
+            "content/packet.jpg",
+            "content/packet.jpg",
+            "content/packet.jpg",
+            "content/packet.jpg",
+            "content/bottle.png",
+            "content/stm32dkhorizontal.png",
+            "content/stm32dkvertical.png",
+            "content/bigpacket.png"
+        ]
+    }
+}

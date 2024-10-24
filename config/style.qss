@@ -1,0 +1,321 @@
+/* =============================================================================
+   GENERAL STYLES
+   ============================================================================*/
+
+/* Regular Label Styles */
+QLabel {
+    /* Light gray text for readability against dark backgrounds */
+    color: #E0E0E0;
+    /* Clean, professional font consistent with the company branding */
+    font-family: Lato, sans-serif;
+    /* Slightly larger font for better visibility in an expo environment */
+    font-size: 18px;
+    /* Bold weight for emphasized labels */
+    font-weight: bold;
+    /* Center-align text for a polished look */
+    qproperty-alignment: AlignCenter;
+}
+
+QPushButton {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    /* White text for contrast */
+    color: white;
+    /* Dark gray for regular buttons */
+    background-color: #616161;
+}
+
+QPushButton:hover {
+    /* Lighter gray on hover to indicate interactivity */
+    background-color: #757575;
+}
+
+/* =============================================================================
+   MAIN WINDOW STYLES
+   ============================================================================*/
+
+/* Main Window Background */
+MainWindow {
+    /* Dark gray to match the overall style */
+    background-color: #212121;
+}
+
+/* =============================================================================
+   COMPONENT STYLES
+   ============================================================================*/
+
+ShelfWidget {
+    /* Darker gray for distinction from the background */
+    background-color: #333333;
+    /* Add margin to create space between ShelfWidget and other elements */
+    margin: 10px;
+    /* Padding inside to add spacing */
+    padding: 10px;
+    /* Rounded corners for a more inviting look */
+    border-radius: 8px;
+}
+
+RailWidget {
+    /* Slightly lighter dark gray to create a card-like appearance */
+    background-color: #424242;
+    /* Red border to highlight importance */
+    border: 2px solid #D32F2F;
+    /* Rounded corners */
+    border-radius: 10px;
+    /* Padding to give space inside */
+    padding: 10px;
+}
+
+QProgressBar {
+    border-radius: 8px;
+    height: 100%;
+    /* Gray for the empty part */
+    background-color: #757575;
+}
+
+QProgressBar::chunk {
+    border-radius: 6px;
+    /* Creates a gradient effect from dark to light green-teal */
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,
+            /* Darker green-teal to start */
+            stop: 0 #007166,
+            /* Mid-tone highlight to add some depth */
+            stop: 1 #009980);
+}
+
+QPushButton#item_count_label {
+    /* White text to make it stand out against the dark background */
+    color: #FFFFFF;
+    /* Vibrant red background for emphasis, consistent with disconnect status color */
+    background-color: #D32F2F;
+    font-family: Lato;
+    /* Larger font size for better readability at a distance */
+    font-size: 36px;
+    /* Bold text to make it stand out */
+    font-weight: extra-bold;
+    /* Padding for better visual space around the text */
+    padding: 5px 10px;
+    /* Rounded corners to soften the look */
+    border-radius: 8px;
+}
+
+
+/* =============================================================================
+   SERIAL INTERFACE STYLES
+   ============================================================================*/
+
+/* SerialInterfaceWidget Retro Terminal Style */
+QTextEdit#serial_text_output {
+    /* Pure black background */
+    background-color: #000000;
+    /* Bright green text for terminal style */
+    color: #00FF00;
+    /* Monospaced font for a classic terminal feel */
+    font-family: "Courier New", monospace;
+    /* Larger font for readability in an expo setting */
+    font-size: 16px;
+    /* Green border to add emphasis and match the retro theme */
+    border: 2px solid #00FF00;
+    /* Padding for readability */
+    padding: 10px;
+}
+
+/* Message Input Field Retro Style */
+QLineEdit#terminal_input {
+    /* Slightly off-black for distinction from the text output area */
+    background-color: #101010;
+    /* Green text for consistency */
+    color: #00FF00;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    /* Green border to match terminal style */
+    border: 2px solid #00FF00;
+    padding: 8px;
+}
+
+/* Send Button Retro Style */
+QPushButton#send_button {
+    /* Dark gray to fit with the retro theme */
+    background-color: #333333;
+    /* Green text to maintain the terminal look */
+    color: #00FF00;
+    /* Green border */
+    border: 2px solid #00FF00;
+    border-radius: 1px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton#send_button:hover {
+    /* Lighter gray to indicate hover state */
+    background-color: #555555;
+}
+
+/* Settings Button Retro Style */
+QPushButton#settings_button {
+    /* Dark gray to match the terminal style */
+    background-color: #333333;
+    /* Green text to fit the retro theme */
+    color: #00FF00;
+    /* Green border for consistency */
+    border: 2px solid #00FF00;
+    border-radius: 1px;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+QPushButton#settings_button:hover {
+    /* Slightly lighter gray for hover effect */
+    background-color: #555555;
+}
+
+/* =============================================================================
+   CONFIG WINDOW STYLES
+   ============================================================================*/
+
+/* ConfigWindow Background */
+QDialog {
+    /* Dark gray background to match general interface */
+    background-color: #333333;
+    /* Rounded corners for modern appearance */
+    border-radius: 10px;
+}
+
+/* QLabel Elements in ConfigWindow */
+QDialog QLabel {
+    /* Light gray text for high visibility */
+    color: #E0E0E0;
+    /* Clean, professional font */
+    font-family: Lato;
+    /* Standard font size for readability */
+    font-size: 16px;
+    /* Regular weight for non-emphasized text */
+    font-weight: bold;
+}
+
+/* Input Fields (QLineEdit and QComboBox) within ConfigWindow */
+QDialog QLineEdit,
+QDialog QComboBox {
+    /* Slightly lighter dark gray for input fields */
+    background-color: #424242;
+    /* Light gray text for readability */
+    color: #E0E0E0;
+    /* Subtle border to indicate input field */
+    border: 2px solid #757575;
+    /* Rounded corners for a softer look */
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+QDialog QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left-width: 1px;
+    /* Divider between dropdown and input */
+    border-left-color: #757575;
+    border-left-style: solid;
+}
+
+/* QPushButton Styles for ConfigWindow */
+QDialog QPushButton {
+    /* Dark gray for buttons */
+    background-color: #616161;
+    /* Light gray text for contrast */
+    color: #E0E0E0;
+    /* Light gray border for emphasis */
+    border: 2px solid #757575;
+    /* Rounded corners for consistency */
+    border-radius: 8px;
+    /* Padding for a comfortable button size */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QDialog QPushButton:hover {
+    /* Slightly lighter gray to indicate interaction */
+    background-color: #757575;
+}
+
+/* =============================================================================
+   SLIDER AND NERD LEVEL LABEL STYLES
+   ============================================================================*/
+
+/* Slider Style 
+ * Width and height are set at fixed value to keep the slider "binary" */
+QSlider {
+    height: 50px;
+    width: 120px;
+}
+
+QSlider::groove:horizontal {
+    /* Bright green for terminal look */
+    border: 2px solid #00FF00;
+    /* Dark background for terminal appearance */
+    background: #333333;
+    /* Set height for the groove to align with toggle design */
+    height: 20px;
+    /* Rounded corners for a softer look */
+    border-radius: 10px;
+    /* Add margin for better alignment */
+    margin: 0 15px;
+}
+
+QSlider::handle:horizontal {
+    /* Bright green for the handle */
+    background: #00FF00;
+    /* White border to make it stand out */
+    border: 2px solid #FFFFFF;
+    /* Width of the handle */
+    width: 40px;
+    /* Height to make the handle truly round */
+    height: 40px;
+    /* Fully rounded handle for toggle switch appearance */
+    border-radius: 20px;
+    /* Adjust margin to center the handle within the groove */
+    margin: -10px 0;
+}
+
+QSlider::handle:horizontal:hover {
+    /* Lighter green when hovered for a visual cue */
+    background: #80FF80;
+}
+
+/* Placeholder Label */
+QLabel#placeholder_label {
+    /* Slightly larger to catch attention */
+    font-size: 34px;
+    /* Bold to stand out */
+    font-weight: bold;
+    /* Bright green to match the retro style */
+    color: #00FF00;
+    /* Monospaced font for retro look */
+    font-family: "Courier New", monospace;
+    /* Dark background for contrast */
+    background-color: #333333;
+    /* Increased padding for more visual space */
+    padding: 25px;
+    /* Dashed border to give a hint of "hidden" content */
+    border: 3px dashed #00FF00;
+    /* Rounded corners to soften the look */
+    border-radius: 10px;
+    /* Center-align text for a polished look */
+    qproperty-alignment: AlignCenter;
+}
+
+/* Nerd Level Labels */
+QLabel#off_label,
+QLabel#on_label {
+    font-size: 16px;
+    font-weight: bold;
+    /* Green text to match retro theme */
+    color: #00FF00;
+    font-family: "Courier New", monospace;
+    /* Padding for better visual alignment */
+    padding: 5px;
+}
